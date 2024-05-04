@@ -132,63 +132,69 @@ ul {
   color: #AFB3CA;
 }
 
-/*========NAVIGATION BAR STYLING========*/
 nav {
-  height: 120px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 100px;
   position: relative;
 }
-nav .logo-img {
-  width: 80px;
+nav .nav-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+nav .nav-wrapper img {
+  width: 130px;
   height: auto;
 }
-nav .nav-links {
-  display: flex;
-  flex-direction: row;
-}
-nav li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 24px;
-}
-nav .hamburger {
-  font-size: 24px;
-  transition: 0.3s;
+nav .navbar__Link-toggle {
   display: none;
 }
-nav .hamburger:hover {
-  color: rgb(96, 96, 96);
-  transition: 0.3s;
+nav .navbar__items {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 24px;
 }
 
-@media (max-width: 500px) {
-  nav .nav-links {
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    height: auto;
+    border-bottom: 1px solid #565a6f;
+  }
+  nav .nav-wrapper {
+    background-color: #050520;
+    padding: 16px 24px;
+  }
+  nav .nav-wrapper,
+  nav .navbar__items {
     flex-direction: column;
-    position: absolute;
-    top: 100%;
+    justify-content: flex-start;
+    transition: 0.3s;
+  }
+  nav .navbar__items {
+    display: none;
+    margin-left: 0;
+  }
+  nav .navbar__Link-toggle {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    align-items: flex-end;
+    cursor: pointer;
     font-size: 24px;
-    background-color: #fff;
-    padding: 0px 12px;
+    position: absolute;
+    right: 16px;
   }
-  nav li {
+  nav .cta-container {
     margin-top: 24px;
-    width: 100%;
   }
-  nav .hamburger {
-    display: block;
-  }
-  .hidden {
-    display: none !important;
-  }
-  .toggleShow {
-    display: block;
-    width: 100%;
-    height: 80vh;
+  nav .navbar__ToggleShow {
+    display: flex;
+    height: auto;
+    transition: 0.3s;
   }
 }
-/*========END OF NAVIGATION BAR STYLING========*/
 .hero-section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
@@ -225,6 +231,22 @@ nav .hamburger:hover {
   width: 50%;
 }
 
+@media (max-width: 800px) {
+  .hero-section .hero--wrapper {
+    flex-direction: column;
+    height: auto;
+    padding-top: 96px;
+  }
+  .hero-section .hero--wrapper .text-description {
+    width: 100%;
+  }
+  .hero-section .hero--wrapper .img-container {
+    width: 100%;
+  }
+  .hero-section .hero--wrapper .img-container img {
+    width: 100%;
+  }
+}
 .responsive-flex {
   display: flex;
   gap: 24px;
@@ -303,25 +325,40 @@ nav .hamburger:hover {
   width: 100%;
 }
 .services-section .service--item p {
-  color: #AFB3CA;
+  color: #afb3ca;
 }
 .services-section button {
   width: 100%;
   justify-content: center;
 }
 
+@media (max-width: 800px) {
+  .services-section .services--wrapper {
+    gap: 24px;
+    flex-direction: column;
+  }
+  .services-section .service--item {
+    flex: 1;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .services-section .service--item {
+    padding: 24px;
+  }
+}
 .why-volumex-section {
   margin-top: 64px;
 }
 .why-volumex-section h2 {
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 .why-volumex-section .why-volumex-item {
   display: flex;
   gap: 16px;
   max-width: 500px;
   margin-bottom: 32px;
-  border-bottom: 1px solid #565A6F;
+  border-bottom: 1px solid #565a6f;
   padding-bottom: 24px;
 }
 .why-volumex-section .why-volumex-item:last-child {
@@ -334,6 +371,27 @@ nav .hamburger:hover {
   width: 50px;
   height: auto;
 }
+.why-volumex-section .img-container {
+  display: flex;
+  justify-content: center;
+}
 .why-volumex-section .img-container img {
   width: 80%;
+}
+
+@media (max-width: 780px) {
+  .why-volumex-section .why-volumex-item {
+    max-width: 100%;
+  }
+  .why-volumex-section .img-container img {
+    width: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .why-volumex-section .why-volumex-item {
+    flex-direction: column;
+  }
+  .why-volumex-section .img-container img {
+    width: 80%;
+  }
 }/*# sourceMappingURL=main.css.map */

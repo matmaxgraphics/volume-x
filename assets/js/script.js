@@ -1,12 +1,7 @@
-"use strict";
+function classToggle() {
+  const navItems = document.querySelectorAll(".navbar__items");
+  navItems.forEach((navItem) => navItem.classList.toggle("navbar__ToggleShow"));
+}
 
-const menuDropdown = document.querySelector(".nav-links");
-const hamburger = document.querySelector(".hamburger");
-
-menuDropdown.classList.add("hidden");
-
-hamburger.addEventListener('click', function(){
-    // menuDropdown.style.display = "block";
-    menuDropdown.classList.toggle("hidden");
-    menuDropdown.classList.toggle("toggleShow");
-})
+const navbarLink = document.querySelector(".navbar__Link-toggle");
+navbarLink.addEventListener("click", classToggle);
