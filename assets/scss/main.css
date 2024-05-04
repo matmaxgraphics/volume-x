@@ -308,4 +308,32 @@ nav .hamburger:hover {
 .services-section button {
   width: 100%;
   justify-content: center;
+}
+
+.why-volumex-section {
+  margin-top: 64px;
+}
+.why-volumex-section h2 {
+  margin-bottom: 24px;
+}
+.why-volumex-section .why-volumex-item {
+  display: flex;
+  gap: 16px;
+  max-width: 500px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #565A6F;
+  padding-bottom: 24px;
+}
+.why-volumex-section .why-volumex-item:last-child {
+  border-bottom: 0;
+}
+.why-volumex-section .why-volumex-item h4 {
+  margin-bottom: 8px;
+}
+.why-volumex-section .why-volumex-item img {
+  width: 50px;
+  height: auto;
+}
+.why-volumex-section .img-container img {
+  width: 80%;
 }/*# sourceMappingURL=main.css.map */
