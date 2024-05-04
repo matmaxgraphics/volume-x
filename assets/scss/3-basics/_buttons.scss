@@ -1,0 +1,41 @@
+.btn {
+  font-family: $bodyFont;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 16px;
+  border: 2px solid;
+  background: linear-gradient(
+    180deg,
+    rgba(33, 34, 60, 1) 0%,
+    rgba(11, 11, 38, 1) 100%
+  );
+  font-size: 16;
+  cursor: pointer;
+}
+.gradient-btn {
+  //   @include textGradientColor;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: $bodyTextColor;
+  position: relative;
+  border: solid $border transparent;
+  background-clip: padding-box;
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 171, 143, 1) 0%,
+      rgba(255, 142, 193, 1) 49%,
+      rgba(182, 126, 253, 1) 100%
+    );
+  }
+}
+.sec-btn {
+  color: $bodyTextColor;
+}
