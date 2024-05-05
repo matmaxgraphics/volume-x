@@ -27,6 +27,9 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- CHART JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
 
   <body>
@@ -216,7 +219,7 @@
             </div>
           </article>
           <article class="token-chart">
-            <img src="assets/images/chart.png" alt="" />
+            <canvas id="myChart" style="width: 50%; height: 50%"></canvas>
           </article>
           <article class="token-breakdown">
             <div class="analysis presale">
@@ -428,5 +431,52 @@
       </div>
     </footer>
     <script src="assets/js/script.js"></script>
+
+    <script>
+      const xValues = [
+        "Presale",
+        "Liquidity Pool",
+        "Advisors & Partners",
+        "Treasury & Marketing",
+        "CEX Listing",
+        "Team",
+      ];
+      const yValues = [50, 22, 8, 10, 5, 5];
+      const barColors = [
+        "#3F87FE",
+        "#FF9462",
+        "#FFC250",
+        "#D4088C",
+        "#ED5959",
+        "#5FB3A0",
+      ];
+
+      new Chart("myChart", {
+        type: "doughnut",
+        data: {
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          tooltips: {
+            callbacks: {
+              label: function (tooltipItem, data) {
+                var label = xValues[tooltipItem.index] || ""; // Get the xValue text
+                if (label) {
+                  label += ": ";
+                }
+                label +=
+                  Math.round(data.datasets[0].data[tooltipItem.index]) + "%";
+                return label;
+              },
+            },
+          },
+        },
+      });
+    </script>
   </body>
 </html>

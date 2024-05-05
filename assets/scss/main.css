@@ -518,7 +518,7 @@ nav .navbar__items {
 .tokenomics-section .token-description .text-group {
   margin-bottom: 24px;
 }
-.tokenomics-section .token-chart img {
+.tokenomics-section .token-chart canva {
   width: 100%;
 }
 .tokenomics-section .token-breakdown {
