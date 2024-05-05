@@ -9,3 +9,15 @@
       background-clip: text;
       color: transparent;
 }
+
+@mixin gradientTextGreen{
+  background: linear-gradient(
+        90deg,
+        rgba(104, 192, 161, 1) 0%,
+        rgba(55, 178, 11049, 1) 49%,
+        rgba(141, 208, 184, 1) 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+}

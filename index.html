@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
 
@@ -39,10 +39,10 @@
         </div>
 
         <ul class="nav-links navbar__items">
-          <a href=""><li>Features</li></a>
-          <a href=""><li>About Us</li></a>
-          <a href=""><li>Tokenomics</li></a>
-          <a href=""><li>Roadmap</li></a>
+          <a href="#services-section"><li>Services</li></a>
+          <a href="#why-volumex-section"><li>Why Us</li></a>
+          <a href="#tokenomics-section"><li>Tokenomics</li></a>
+          <a href="#roadmap-section"><li>Roadmap</li></a>
           <a href=""><li>Whitepaper</li></a>
         </ul>
 
@@ -99,7 +99,7 @@
       </div>
     </section>
 
-    <section class="services-section">
+    <section class="services-section" id="services-section">
       <div class="section_max-width">
         <header>
           <h2>Our Service Bots</h2>
@@ -111,7 +111,7 @@
 
         <div class="services--wrapper">
           <article class="service--item">
-            <h4>VolumeX Bot</h4>
+            <h4><span class="gradient-text">VolumeX Bot</span></h4>
             <p>
               Effortlessly scale your token's on-chain activity through
               strategic buy and sell automation. Enhance exchange visibility and
@@ -120,11 +120,12 @@
             <img src="assets/images/service-img-1.png" alt="" />
             <a href=""
               ><button class="btn gradient-btn">
-                Launch Bot <i class="ri-arrow-right-s-line"></i></button
+                Start Generating Volume
+                <i class="ri-arrow-right-s-line"></i></button
             ></a>
           </article>
           <article class="service--item">
-            <h4>SolanaHolders Bot</h4>
+            <h4><span class="gradient-text-green">SolanaHolders Bot</span></h4>
             <p>
               Expand your token's holdership by acquiring new holders from a
               diverse pool of wallets to cultivate a strong community of engaged
@@ -132,8 +133,9 @@
             </p>
             <img src="assets/images/service-img-2.png" alt="" />
             <a href=""
-              ><button class="btn gradient-btn">
-                Launch Bot <i class="ri-arrow-right-s-line"></i></button
+              ><button class="btn gradient-btn gradient-btn-green">
+                Get New Token Holders
+                <i class="ri-arrow-right-s-line"></i></button
             ></a>
           </article>
         </div>
@@ -143,7 +145,10 @@
     <section class="why-volumex-section">
       <div class="section_max-width">
         <h2>Why VolumeX</h2>
-        <div class="why-volumex--wrapper responsive-flex">
+        <div
+          class="why-volumex--wrapper responsive-flex"
+          id="why-volumex-section"
+        >
           <article class="text-description">
             <div class="why-volumex-item">
               <span>
@@ -195,11 +200,11 @@
     <section class="tokenomics-section">
       <div class="section_max-width">
         <h2>Tokenomics</h2>
-        <div class="tokenomics--wrapper">
+        <div class="tokenomics--wrapper" id="tokenomics-section">
           <article class="token-description">
             <div class="text-group">
               <p>Total supply</p>
-              <span>100,000,000</span>
+              <span>10,000,000</span>
             </div>
             <div class="text-group">
               <p>Token Symbol</p>
@@ -214,47 +219,69 @@
             <img src="assets/images/chart.png" alt="" />
           </article>
           <article class="token-breakdown">
-            <div class="analysis marketing">
-              <div class="text-group">
-                <p>15% Marketing</p>
-                <small>Marketing and Partnerships</small>
-              </div>
-              <div class="text-group align-right">
-                <small>Amount</small>
-                <p>100,000,000</p>
-              </div>
-            </div>
-
-            <div class="analysis sale">
-              <div class="text-group">
-                <p>12% Private Sale</p>
-                <small>Initial Private Investors raise</small>
-              </div>
-              <div class="text-group align-right">
-                <small>Amount</small>
-                <p>100,000,000</p>
-              </div>
-            </div>
-
             <div class="analysis presale">
               <div class="text-group">
-                <p>65% Presale</p>
-                <small>Development, Security, KYC.</small>
+                <p>50% Presale</p>
+                <small>Public presale</small>
               </div>
               <div class="text-group align-right">
                 <small>Amount</small>
-                <p>100,000,000</p>
+                <p>5,000,000</p>
+              </div>
+            </div>
+
+            <div class="analysis liquidity">
+              <div class="text-group">
+                <p>22% Liquidity Pool</p>
+                <small>Locked Liquidity for VOLX</small>
+              </div>
+              <div class="text-group align-right">
+                <small>Amount</small>
+                <p>2,200,000</p>
+              </div>
+            </div>
+
+            <div class="analysis advisors">
+              <div class="text-group">
+                <p>8% Advisors & Partners</p>
+                <small>Advisors and Partnership costs</small>
+              </div>
+              <div class="text-group align-right">
+                <small>Amount</small>
+                <p>800,000</p>
+              </div>
+            </div>
+
+            <div class="analysis marketing">
+              <div class="text-group">
+                <p>10% Treasury & Marketing</p>
+                <small>Treasury, Marketing & Promotion</small>
+              </div>
+              <div class="text-group align-right">
+                <small>Amount</small>
+                <p>1,000,000</p>
+              </div>
+            </div>
+
+            <div class="analysis listing">
+              <div class="text-group">
+                <p>5% CEX Listing</p>
+                <small>5% CEX Listing</small>
+              </div>
+              <div class="text-group align-right">
+                <small>Amount</small>
+                <p>500,000</p>
               </div>
             </div>
 
             <div class="analysis team">
               <div class="text-group">
-                <p>8% Team</p>
+                <p>5% Team</p>
                 <small>Development, Security, KYC.</small>
               </div>
               <div class="text-group align-right">
                 <small>Amount</small>
-                <p>100,000,000</p>
+                <p>500,000</p>
               </div>
             </div>
           </article>
@@ -265,7 +292,7 @@
     <section class="roadmap-section">
       <div class="section_max-width">
         <h2>Roadmap</h2>
-        <div class="roadmap--wrapper">
+        <div class="roadmap--wrapper" id="roadmap-section">
           <article class="roadmap-item">
             <h2><span>Q2 2024</span></h2>
             <ul>
@@ -278,12 +305,19 @@
                 <i class="ri-checkbox-circle-fill"></i> Release of VolumeX Bot
               </li>
               <li>
-                <i class="ri-checkbox-circle-fill"></i> VOLX Token Presale
+                <i class="ri-checkbox-circle-fill"></i> VOLX Token Presale on
+                UPEX
               </li>
-              <li><i class="ri-checkbox-circle-fill"></i> VOLX Token Launch</li>
               <li>
-                <i class="ri-checkbox-circle-fill"></i> Commence Revenue
-                Sharing/Buybacks & Burn
+                <i class="ri-checkbox-circle-fill"></i> VOLX Token Launch on
+                Raydium
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i> Post Launch Marketing
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i> Commencement of Buybacks
+                & Burns
               </li>
               <li>
                 <i class="ri-checkbox-circle-fill"></i> Partnerships with
@@ -302,29 +336,30 @@
           </article>
 
           <article class="roadmap-item">
-            <h2><span>Q3 2024</span></h2>
+            <h2>Q3 2024</h2>
             <ul>
               <li><i class="ri-checkbox-circle-fill"></i>More Partnerships</li>
               <li>
-                <i class="ri-checkbox-circle-fill"></i> Security and User-driven
+                <i class="ri-checkbox-circle-fill"></i> Security and UI/UX
                 upgrades
               </li>
               <li>
-                <i class="ri-checkbox-circle-fill"></i> Expand Bot user base
+                <i class="ri-checkbox-circle-fill"></i> Security and UI/UX
+                upgrades
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i> More Marketing Push
               </li>
               <li>
                 <i class="ri-checkbox-circle-fill"></i> Expand Bot user base
               </li>
-              <li>
-                <i class="ri-checkbox-circle-fill"></i> Optimize existing
-                websites
-              </li>
+              <li><i class="ri-checkbox-circle-fill"></i> Team expansion</li>
               <li><i class="ri-checkbox-circle-fill"></i> CEX Listings</li>
             </ul>
           </article>
 
           <article class="roadmap-item">
-            <h2><span>Q4 2024</span></h2>
+            <h2>Q4 2024</h2>
             <ul>
               <li>
                 <i class="ri-checkbox-circle-fill"></i> Expand platform revenue
@@ -334,11 +369,11 @@
                 <i class="ri-checkbox-circle-fill"></i> More Marketing Push
               </li>
               <li>
-                <i class="ri-checkbox-circle-fill"></i> Release of VolumeX Bot
+                <i class="ri-checkbox-circle-fill"></i> Community activities
               </li>
               <li>
-                <i class="ri-checkbox-circle-fill"></i> Community games &
-                activities
+                <i class="ri-checkbox-circle-fill"></i> Further improvement on
+                UI/UX designs
               </li>
               <li>
                 <i class="ri-checkbox-circle-fill"></i> Increase user base
@@ -347,7 +382,10 @@
                 <i class="ri-checkbox-circle-fill"></i> Increase bot revenue
               </li>
               <li><i class="ri-checkbox-circle-fill"></i> Onboard more KOLs</li>
-              <li><i class="ri-checkbox-circle-fill"></i> More CEX Listings</li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i> More CEX Listings and
+                Partnerships
+              </li>
             </ul>
           </article>
         </div>

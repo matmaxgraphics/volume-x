@@ -1,3 +1,10 @@
+  $grad-color: linear-gradient(
+    90deg,
+    rgba(0, 132, 255, 1) 0%,
+    rgba(255, 138, 199, 1) 41%,
+    rgba(254, 186, 117, 1) 100%
+  );
+
 html {
   scroll-behavior: smooth;
 }
