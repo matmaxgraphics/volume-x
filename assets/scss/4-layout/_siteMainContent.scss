@@ -33,7 +33,7 @@
 
 @media (max-width: 800px) {
   .hero-section {
-    .hero--wrapper{
+    .hero--wrapper {
       flex-direction: column;
       height: auto;
       padding-top: 96px;
@@ -138,7 +138,7 @@
     justify-content: center;
   }
 }
-@media(max-width: 800px){
+@media (max-width: 800px) {
   .services-section {
     .services--wrapper {
       gap: 24px;
@@ -150,7 +150,7 @@
     }
   }
 }
-@media(max-width: 500px){
+@media (max-width: 500px) {
   .services-section {
     .service--item {
       padding: 24px;
@@ -190,10 +190,10 @@
   }
 }
 
-@media(max-width: 780px){
+@media (max-width: 780px) {
   .why-volumex-section {
     .why-volumex-item {
-      max-width: 100%; 
+      max-width: 100%;
     }
     .img-container {
       img {
@@ -203,7 +203,7 @@
   }
 }
 
-@media(max-width: 480px){
+@media (max-width: 480px) {
   .why-volumex-section {
     .why-volumex-item {
       flex-direction: column;
@@ -211,6 +211,119 @@
     .img-container {
       img {
         width: 80%;
+      }
+    }
+  }
+}
+
+.tokenomics-section {
+  margin: 64px 0;
+  padding: 0 24px;
+  .section_max-width {
+    max-width: 1600px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(34, 50, 138, 0.5) 100%
+    );
+    border-radius: 16px;
+    padding: 24px;
+  }
+  .tokenomics--wrapper {
+    display: flex;
+    gap: 24px;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+
+    article {
+      // flex: 1;
+      width: calc(33.33% - 24px);
+    }
+  }
+  .token-description {
+    max-width: max-content;
+    p,
+    span {
+      font-family: $headingFont;
+      font-weight: 700;
+    }
+    span {
+      @include textGradientColor;
+      font-size: 32px;
+      margin-top: 8px;
+    }
+    .text-group {
+      margin-bottom: 24px;
+    }
+  }
+  .token-chart {
+    img {
+      width: 100%;
+    }
+  }
+  .token-breakdown {
+    $border-10: 10px;
+    align-self: center;
+    .analysis {
+      background-color: rgba($color: #dfe1e7, $alpha: 0.2);
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+      margin-bottom: 24px;
+    }
+    p {
+      font-family: $headingFont;
+      font-weight: 600;
+      color: #fff;
+    }
+    .marketing {
+      border-left: $border-10 solid #3f87fe;
+    }
+    .sale {
+      border-left: $border-10 solid #ff9462;
+    }
+    .presale {
+      border-left: $border-10 solid #ffc250;
+    }
+    .team {
+      border-left: $border-10 solid #5fb3a0;
+      margin-bottom: unset;
+    }
+    .align-right {
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .tokenomics-section {
+    .tokenomics--wrapper {
+      flex-flow: row wrap;
+      article {
+        width: calc(50% - 24px);
+      }
+      .token-breakdown {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .tokenomics-section {
+    padding: 0;
+    .section_max-width{
+      border-radius: 0;
+    }
+    .tokenomics--wrapper {
+      justify-content: flex-start;
+      article {
+        width: 100%;
+        margin-top: 24px;
       }
     }
   }
