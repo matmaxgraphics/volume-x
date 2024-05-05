@@ -316,7 +316,7 @@
 @media (max-width: 600px) {
   .tokenomics-section {
     padding: 0;
-    .section_max-width{
+    .section_max-width {
       border-radius: 0;
     }
     .tokenomics--wrapper {
@@ -325,6 +325,68 @@
         width: 100%;
         margin-top: 24px;
       }
+    }
+  }
+}
+
+.roadmap-section {
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .roadmap--wrapper {
+    display: flex;
+    gap: 24px;
+    flex-flow: row wrap;
+  }
+  .roadmap-item {
+    padding: 24px;
+    border-radius: 32px;
+    border: 2px solid var(--dffd, #b67efd);
+    background: linear-gradient(
+      137deg,
+      rgba(27, 28, 54, 0.16) 23.98%,
+      rgba(112, 113, 122, 0.16) 65.73%
+    );
+    backdrop-filter: blur(5.849999904632568px);
+    flex: 1;
+    h2 {
+      margin-bottom: 24px;
+    }
+    span {
+      @include textGradientColor;
+    }
+    i {
+      color: #18f9a8;
+    }
+    li {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+  }
+  .btn-group{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin: 48px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .roadmap-section {
+    .roadmap-item {
+      flex: unset;
+      width: calc(50% - 24px);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .roadmap-section {
+    .roadmap-item {
+      width: 100%;
     }
   }
 }
