@@ -232,6 +232,9 @@ nav .navbar__items {
     background-color: #050520;
     padding: 16px 24px;
   }
+  nav .nav-wrapper img {
+    width: 50px;
+  }
   nav .nav-wrapper,
   nav .navbar__items {
     flex-direction: column;

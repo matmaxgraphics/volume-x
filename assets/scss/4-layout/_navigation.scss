@@ -32,6 +32,9 @@ nav {
     .nav-wrapper {
       background-color: $primaryColor;
       padding: 16px 24px;
+      img{
+        width: 50px;
+      }
     }
     .nav-wrapper,
     .navbar__items {
