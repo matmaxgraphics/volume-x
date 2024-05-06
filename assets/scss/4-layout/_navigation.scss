@@ -37,6 +37,7 @@ nav {
     .navbar__items {
       flex-direction: column;
       justify-content: flex-start;
+      gap: 32px;
       transition: 0.3s;
     }
 

@@ -50,7 +50,7 @@
         </ul>
 
         <div class="cta-container navbar__items">
-          <a href=""
+          <a href="#launch-bot"
             ><button class="btn gradient-btn">
               Launch Bot <i class="ri-arrow-right-s-line"></i></button
           ></a>
@@ -70,11 +70,11 @@
             VolumeX and SolanaHolders
           </h4>
           <div class="btn-group">
-            <a href=""
+            <a href="#launch-bot"
               ><button class="btn gradient-btn">
                 Launch Bot <i class="ri-arrow-right-s-line"></i></button
             ></a>
-            <a href=""><button class="btn sec-btn">Join Community</button></a>
+            <a href="#join-community"><button class="btn sec-btn">Join Community</button></a>
           </div>
         </article>
         <article class="img-container"></article>
@@ -112,7 +112,7 @@
           </p>
         </header>
 
-        <div class="services--wrapper">
+        <div class="services--wrapper" id="launch-bot">
           <article class="service--item">
             <h4><span class="gradient-text">VolumeX Bot</span></h4>
             <p>
@@ -123,7 +123,7 @@
             <img src="assets/images/service-img-1.png" alt="" />
             <a href=""
               ><button class="btn gradient-btn">
-                Start Generating Volume
+                Solana VolumeX
                 <i class="ri-arrow-right-s-line"></i></button
             ></a>
           </article>
@@ -137,7 +137,7 @@
             <img src="assets/images/service-img-2.png" alt="" />
             <a href=""
               ><button class="btn gradient-btn gradient-btn-green">
-                Get New Token Holders
+                Solana HolderX
                 <i class="ri-arrow-right-s-line"></i></button
             ></a>
           </article>
@@ -211,7 +211,7 @@
             </div>
             <div class="text-group">
               <p>Token Symbol</p>
-              <span>$VOLX</span>
+              <span>VOLX</span>
             </div>
             <div class="text-group">
               <p>Tax</p>
@@ -224,23 +224,23 @@
           <article class="token-breakdown">
             <div class="analysis presale">
               <div class="text-group">
-                <p>50% Presale</p>
+                <p>70% Presale</p>
                 <small>Public presale</small>
               </div>
               <div class="text-group align-right">
                 <small>Amount</small>
-                <p>5,000,000</p>
+                <p>7,000,000</p>
               </div>
             </div>
 
             <div class="analysis liquidity">
               <div class="text-group">
-                <p>22% Liquidity Pool</p>
+                <p>14% Liquidity Pool</p>
                 <small>Locked Liquidity for VOLX</small>
               </div>
               <div class="text-group align-right">
                 <small>Amount</small>
-                <p>2,200,000</p>
+                <p>1,400,000</p>
               </div>
             </div>
 
@@ -255,36 +255,25 @@
               </div>
             </div>
 
-            <div class="analysis marketing">
-              <div class="text-group">
-                <p>10% Treasury & Marketing</p>
-                <small>Treasury, Marketing & Promotion</small>
-              </div>
-              <div class="text-group align-right">
-                <small>Amount</small>
-                <p>1,000,000</p>
-              </div>
-            </div>
-
             <div class="analysis listing">
               <div class="text-group">
-                <p>5% CEX Listing</p>
-                <small>5% CEX Listing</small>
+                <p>4% (locked) CEX Listing</p>
+                <small>Centralized Exchange Listings</small>
               </div>
               <div class="text-group align-right">
                 <small>Amount</small>
-                <p>500,000</p>
+                <p>400,000</p>
               </div>
             </div>
 
             <div class="analysis team">
               <div class="text-group">
-                <p>5% Team</p>
+                <p>4% (locked) Team</p>
                 <small>Development, Security, KYC.</small>
               </div>
               <div class="text-group align-right">
                 <small>Amount</small>
-                <p>500,000</p>
+                <p>400,000</p>
               </div>
             </div>
           </article>
@@ -393,22 +382,22 @@
           </article>
         </div>
         <div class="btn-group">
-          <a href=""
+          <a href="#launch-bot"
             ><button class="btn gradient-btn">
               Launch Bot <i class="ri-arrow-right-s-line"></i></button
           ></a>
-          <a href=""><button class="btn sec-btn">Join Community</button></a>
+          <a href="#join-community"><button class="btn sec-btn">Join Community</button></a>
         </div>
       </div>
     </section>
 
     <footer>
       <div class="footer--wrapper section_max-width">
-        <article class="join-community">
+        <article class="join-community" id="join-community">
           <h2>Join Community</h2>
           <div class="img-group">
-            <img src="assets/images/telegram.png" alt="" />
-            <img src="assets/images/x.png" alt="" />
+            <a href=""><img src="assets/images/telegram.png" alt="" /></a>
+            <a href=""><img src="assets/images/x.png" alt="" /></a>
           </div>
         </article>
         <article>
@@ -437,19 +426,11 @@
         "Presale",
         "Liquidity Pool",
         "Advisors & Partners",
-        "Treasury & Marketing",
         "CEX Listing",
         "Team",
       ];
-      const yValues = [50, 22, 8, 10, 5, 5];
-      const barColors = [
-        "#3F87FE",
-        "#FF9462",
-        "#FFC250",
-        "#D4088C",
-        "#ED5959",
-        "#5FB3A0",
-      ];
+      const yValues = [70, 14, 8, 4, 4];
+      const barColors = ["#3F87FE", "#FF9462", "#FFC250", "#ED5959", "#5FB3A0"];
 
       new Chart("myChart", {
         type: "doughnut",

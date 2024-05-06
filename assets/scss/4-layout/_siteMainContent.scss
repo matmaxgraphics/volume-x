@@ -230,12 +230,12 @@
   padding: 0 24px;
   .section_max-width {
     max-width: 1600px;
-    background: rgb(0, 0, 0);
     background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(34, 50, 138, 0.5) 100%
+      137deg,
+      rgba(27, 28, 54, 0.16) 23.98%,
+      rgba(112, 113, 122, 0.16) 65.73%
     );
+    backdrop-filter: blur(6px);
     border-radius: 16px;
     padding: 24px;
   }
@@ -293,16 +293,16 @@
       border-left: $border-10 solid #3f87fe;
     }
     .liquidity {
-      border-left: $border-10 solid #FF9462;
+      border-left: $border-10 solid #ff9462;
     }
     .advisors {
-      border-left: $border-10 solid #FFC250;
+      border-left: $border-10 solid #ffc250;
     }
     .marketing {
-      border-left: $border-10 solid #D4088C;
+      border-left: $border-10 solid #d4088c;
     }
     .listing {
-      border-left: $border-10 solid #ED5959;
+      border-left: $border-10 solid #ed5959;
     }
 
     .team {
