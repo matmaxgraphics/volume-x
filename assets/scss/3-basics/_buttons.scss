@@ -4,6 +4,9 @@
   padding: 12px;
   border-radius: 16px;
   border: 2px solid;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   background: linear-gradient(
     180deg,
     rgba(33, 34, 60, 1) 0%,
@@ -14,20 +17,17 @@
 }
 
 .gradient-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  
   color: $bodyTextColor;
   position: relative;
-
-  border: none; /* remove solid border */
+  border: none;
 
   &:before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
-    margin: -2px; /* adjust margin if border width changes */
+    margin: -2px;
     border-radius: inherit;
     background: linear-gradient(
       120deg,
@@ -53,7 +53,7 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    margin: -2px; /* adjust margin if border width changes */
+    margin: -2px;
     border-radius: inherit;
     background: linear-gradient(
       180deg,
@@ -63,6 +63,8 @@
     );
   }
 }
+
+
 
 .sec-btn {
   color: $bodyTextColor;

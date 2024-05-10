@@ -5,3 +5,24 @@ function classToggle() {
 
 const navbarLink = document.querySelector(".navbar__Link-toggle");
 navbarLink.addEventListener("click", classToggle);
+
+
+
+function copyToClipboard() {
+  const walletAddress = document.querySelector('.volx-address');
+
+  if (walletAddress) {
+    const textarea = document.createElement('textarea');
+    textarea.value = walletAddress.textContent;
+    document.body.appendChild(textarea);
+    textarea.select();
+
+    navigator.clipboard.writeText(textarea.value);
+
+    document.body.removeChild(textarea);
+
+    alert('Copied to clipboard: ' + walletAddress.textContent);
+  } else {
+    console.error('Span element not found.');
+  }
+}

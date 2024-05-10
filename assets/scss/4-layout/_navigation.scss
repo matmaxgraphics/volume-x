@@ -7,7 +7,8 @@ nav {
   }
 
   .nav-wrapper img {
-    width: 80px;
+    margin-top: 10px;
+    width: 200px;
     height: auto;
   }
   .navbar__Link-toggle {
@@ -33,7 +34,7 @@ nav {
       background-color: $primaryColor;
       padding: 16px 24px;
       img{
-        width: 50px;
+        width: 72px;
       }
     }
     .nav-wrapper,

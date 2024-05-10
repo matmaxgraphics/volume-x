@@ -14,7 +14,7 @@
   }
   .hero--wrapper {
     display: flex;
-    height: 50vh;
+    height: 70vh;
     align-items: center;
     width: 100%;
     gap: 24px;
@@ -26,8 +26,30 @@
     display: flex;
     gap: 12px;
   }
+  .address-container{
+    margin-top: 24px;
+    h5{
+      margin-bottom: 8px;
+    }
+    .address{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    span{
+      @include textGradientColor;
+    }
+    .ri-file-copy-line{
+      font-size: 24px;
+    }
+  }
   .img-container {
     width: 50%;
+    margin-left: 20px;
+  }
+  .img-container img {
+    max-width: 90%;
+    height: auto;
   }
 }
 

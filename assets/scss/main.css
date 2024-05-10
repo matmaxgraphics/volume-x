@@ -104,25 +104,25 @@ ul {
   padding: 12px;
   border-radius: 16px;
   border: 2px solid;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   background: linear-gradient(180deg, rgb(33, 34, 60) 0%, rgb(11, 11, 38) 100%);
   font-size: 16px;
   cursor: pointer;
 }
 
 .gradient-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
   color: #AFB3CA;
   position: relative;
-  border: none; /* remove solid border */
+  border: none;
 }
 .gradient-btn:before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
-  margin: -2px; /* adjust margin if border width changes */
+  margin: -2px;
   border-radius: inherit;
   background: linear-gradient(120deg, rgb(255, 171, 143) 0%, rgb(255, 142, 193) 49%, rgb(182, 126, 253) 100%);
 }
@@ -135,7 +135,7 @@ ul {
   position: absolute;
   inset: 0;
   z-index: -1;
-  margin: -2px; /* adjust margin if border width changes */
+  margin: -2px;
   border-radius: inherit;
   background: linear-gradient(180deg, rgb(104, 192, 161) 0%, rgb(55, 178, 255) 49%, rgb(141, 208, 184) 100%);
 }
@@ -207,7 +207,8 @@ nav .nav-wrapper {
   justify-content: space-around;
 }
 nav .nav-wrapper img {
-  width: 80px;
+  margin-top: 10px;
+  width: 200px;
   height: auto;
 }
 nav .navbar__Link-toggle {
@@ -233,7 +234,7 @@ nav .navbar__items {
     padding: 16px 24px;
   }
   nav .nav-wrapper img {
-    width: 50px;
+    width: 72px;
   }
   nav .nav-wrapper,
   nav .navbar__items {
@@ -285,7 +286,7 @@ nav .navbar__items {
 }
 .hero-section .hero--wrapper {
   display: flex;
-  height: 50vh;
+  height: 70vh;
   align-items: center;
   width: 100%;
   gap: 24px;
@@ -297,8 +298,33 @@ nav .navbar__items {
   display: flex;
   gap: 12px;
 }
+.hero-section .address-container {
+  margin-top: 24px;
+}
+.hero-section .address-container h5 {
+  margin-bottom: 8px;
+}
+.hero-section .address-container .address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero-section .address-container span {
+  background: linear-gradient(90deg, rgb(0, 132, 255) 0%, rgb(255, 138, 199) 41%, rgb(254, 186, 117) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero-section .address-container .ri-file-copy-line {
+  font-size: 24px;
+}
 .hero-section .img-container {
   width: 50%;
+  margin-left: 20px;
+}
+.hero-section .img-container img {
+  max-width: 90%;
+  height: auto;
 }
 
 @media (max-width: 800px) {
