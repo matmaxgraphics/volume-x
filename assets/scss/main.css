@@ -322,6 +322,9 @@ nav .navbar__items {
   align-items: center;
   gap: 8px;
 }
+.hero-section .address-container .address p {
+  word-break: break-all;
+}
 .hero-section .address-container span {
   background: linear-gradient(90deg, rgb(0, 132, 255) 0%, rgb(255, 138, 199) 41%, rgb(254, 186, 117) 100%);
   -webkit-background-clip: text;
