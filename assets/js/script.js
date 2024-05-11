@@ -16,6 +16,7 @@ function copyToClipboard() {
     textarea.value = walletAddress.textContent;
     document.body.appendChild(textarea);
     textarea.select();
+    textarea.setSelectionRange(0, 99999);
 
     navigator.clipboard.writeText(textarea.value);
 
