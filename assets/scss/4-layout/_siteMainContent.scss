@@ -103,6 +103,9 @@
       }
     }
   }
+  .responsive-flex.column-reverse{
+    flex-direction: column-reverse;
+  }
 }
 .benefit-section {
   margin-top: 48px;
@@ -188,6 +191,35 @@
     }
   }
 }
+
+
+.utilities-section{
+  margin-top: 64px;
+  .utilities--item{
+    margin-top: 48px;
+    header{
+      margin-bottom: 24px;
+    }
+    h4{
+      margin-bottom: 16px;
+      color: #37B268;
+      span{
+        color: #B67EFD;
+      }
+    }
+    .btn{
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+  }
+}
+
+
 
 .why-volumex-section {
   margin-top: 64px;

@@ -400,6 +400,9 @@ nav .navbar__items {
   .responsive-flex .img-container img {
     width: 100%;
   }
+  .responsive-flex.column-reverse {
+    flex-direction: column-reverse;
+  }
 }
 .benefit-section {
   margin-top: 48px;
@@ -483,6 +486,32 @@ nav .navbar__items {
     padding: 24px;
   }
 }
+.utilities-section {
+  margin-top: 64px;
+}
+.utilities-section .utilities--item {
+  margin-top: 48px;
+}
+.utilities-section .utilities--item header {
+  margin-bottom: 24px;
+}
+.utilities-section .utilities--item h4 {
+  margin-bottom: 16px;
+  color: #37B268;
+}
+.utilities-section .utilities--item h4 span {
+  color: #B67EFD;
+}
+.utilities-section .utilities--item .btn {
+  width: 100%;
+  justify-content: center;
+}
+.utilities-section iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+}
+
 .why-volumex-section {
   margin-top: 64px;
 }
